@@ -3,6 +3,8 @@ Code used for [Weak NAS Predictors Are All You Need](https://arxiv.org/abs/2102.
 
 ## Main Pipeline
 ![An illustration of our Weak Predictors Pipeline](assets/process.png)
+
+
 ![Visualization of the Search Dynamics](assets/dynamics.png)
 
 ## Performance Results
