@@ -21,7 +21,7 @@ Coming soon
 Coming soon
 
 ## Acknowledgement
-Codebase from [AutoGAN](https://github.com/D-X-Y/AutoDL-Projects)
+Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)
 
 ## Citation
 if you find this repo is helpful, please cite
