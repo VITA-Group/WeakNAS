@@ -43,16 +43,14 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 
 ### Open Domain Search Space
 
-- ImageNet (MobileNet Setting)  
-Best architecture founded by WeakNAS
-  
+- ImageNet (MobileNet Setting)
 <p align="center">
   <img src="assets/imagenet@mobilenet_compare.png" alt="drawing" width="540"/>
 </p>
+Best architecture founded by WeakNAS
 <p align="center">
   <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="800"/>
 </p>
-
 Reproduce Best architecture @800 Queries
 ```bash
 cd pytorch-image-models;
