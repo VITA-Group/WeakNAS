@@ -45,8 +45,8 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 
 - ImageNet (MobileNet Setting)  
 Best architecture founded by WeakNAS
-<img src="assets/imagenet@mobilenet_compare.png" alt="drawing" width="600" class="center"/>
-  <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="800" class="center"/>
+  <img src="assets/imagenet@mobilenet_compare.png" alt="drawing" width="600" class="center">
+  <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="800" class="center">
 
 Reproduce Best architecture @800 Queries
 ```bash
