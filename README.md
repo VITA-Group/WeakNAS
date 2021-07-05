@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ### NASBenchs Search Space
 
-- NAS-Bench-101  
+- [NAS-Bench-101](https://github.com/google-research/nasbench)  
 Download pre-processed NAS-Bench-101 from this [Link]()
 ```bash
 python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
@@ -28,7 +28,7 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 --init_sample 100 --sample_each_iter 10 --max_sample 10000 \
 --mlp_size 1000 1000 1000 1000 --mlp_iter 200 --sample_decay none
 ```
-- NAS-Bench-201  
+- [NAS-Bench-201](https://github.com/D-X-Y/NAS-Bench-201)  
 Download pre-processed NAS-Bench-201 from this [Link]()
 ```bash
 python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
@@ -43,9 +43,11 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 
 ### Open Domain Search Space
 
-- ImageNet (MobileNet Setting)
+- ImageNet (MobileNet Setting)  
+Best architecture founded by WeakNAS
+![](assets/imagenet@mobilenet_compare.png)
+![](assets/imagenet@mobilenet_best.png)
 
-![best architecture founded by WeakNAS w](assets/imagenet@mobilenet.png)
 
 ```bash
 cd pytorch-image-models;
