@@ -1,4 +1,4 @@
-# Weak NAS Predictors Are All You Need
+# Stronger NAS with Weaker Predictors
 Code used for [Weak NAS Predictors Are All You Need](https://arxiv.org/abs/2102.10490). 
 
 ## Main Pipeline
@@ -29,7 +29,7 @@ Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)
 if you find this repo is helpful, please cite
 ```
 @article{wu2021weak,
-  title={Weak NAS Predictors Are All You Need},
+  title={Stronger NAS with Weaker Predictors},
   author={Junru Wu and Xiyang Dai and Dongdong Chen and Yinpeng Chen and Mengchen Liu and Ye Yu and Zhangyang Wang and Zicheng Liu and Mei Chen and Lu Yuan},
   journal={arXiv preprint arXiv:2102.10490},
   year={2021}
