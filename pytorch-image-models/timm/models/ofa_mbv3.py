@@ -22,7 +22,21 @@ def _cfg(**kwargs):
 
 
 default_cfgs = {
-    'ofa_mbv3': _cfg(
+    'ofa_mbv3_800': _cfg(
+	width_mult=1.2,
+	ks_list=[3, 5, 5, 5,
+			 7, 5, 7, 3,
+			 3, 7, 5, 7,
+			 3, 3, 5, 5,
+			 7, 5, 3, 5],
+	expand_ratio_list=[4, 6, 4, 4,
+					   4, 3, 4, 6,
+					   4, 6, 6, 3,
+					   6, 6, 6, 3,
+					   6, 6, 4, 3],
+	depth_list=[2, 4, 4, 4, 4],
+	),
+    'ofa_mbv3_1000': _cfg(
 	width_mult=1.2,
 	ks_list=[5, 3, 3, 3,
 			 5, 5, 5, 3,
@@ -39,8 +53,13 @@ default_cfgs = {
 }
 
 @register_model
-def ofa_mbv3(pretrained=False, **kwargs):
-    model = OFAMobileNetV3(**default_cfgs['ofa_mbv3'], **kwargs)
+def ofa_mbv3_800(pretrained=False, **kwargs):
+    model = OFAMobileNetV3(**default_cfgs['ofa_mbv3_800'], **kwargs)
+    return model
+
+@register_model
+def ofa_mbv3_1000(pretrained=False, **kwargs):
+    model = OFAMobileNetV3(**default_cfgs['ofa_mbv3_1000'], **kwargs)
     return model
 
 

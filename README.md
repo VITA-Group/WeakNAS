@@ -31,14 +31,24 @@ pip install -r requirements.txt
 ```bash
 cd pytorch-image-models;
 # 800 Samples model
-bash distributed_train.sh $NUM_GPU ../DATASET/imagenet --model ofa_mbv3 -b 128 --sched cosine --img-size 236 --epochs 300 --warmup-epochs 3 --decay-rate .97 --opt rmsproptf --opt-eps .001 -j 10 --warmup-lr 1e-6 --weight-decay 1e-05 --drop 0.3 --drop-path 0.0 --model-ema --model-ema-decay 0.9999 --aa rand-m9-mstd0.5 --remode pixel --reprob 0.2 --lr 1e-02 --output ../OUTPUT --experiment res_224/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_300/dp_0.0 --log-interval 200
+bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_800 -b 128 \
+--sched cosine --img-size 236 --epochs 300 --warmup-epochs 3 --decay-rate .97 \
+--opt rmsproptf --opt-eps .001 -j 10 --warmup-lr 1e-6 --weight-decay 1e-05 --drop 0.3 \
+--drop-path 0.0 --model-ema --model-ema-decay 0.9999 --aa rand-m9-mstd0.5 \
+--remode pixel --reprob 0.2 --lr 1e-02 --output $LOG_PATH \
+--experiment res_224/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_300/dp_0.0 --log-interval 200
 ```
 Tensorboard.dev Logs: [Links]() 
 
 ```bash
 cd pytorch-image-models;
 # 1000 Samples model
-bash distributed_train.sh $NUM_GPU ../DATASET/imagenet --model ofa_mbv3 -b 128 --sched cosine --img-size 236 --epochs 600 --warmup-epochs 3 --decay-rate .97 --opt rmsproptf --opt-eps .001 -j 10 --warmup-lr 1e-6 --weight-decay 1e-05 --drop 0.3 --drop-path 0.0 --model-ema --model-ema-decay 0.9999 --aa rand-m9-mstd0.5 --remode pixel --reprob 0.2 --lr 1e-02 --output ../OUTPUT --experiment res_224/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_600/dp_0.0 --log-interval 200
+bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_1000 -b 128 \
+--sched cosine --img-size 236 --epochs 600 --warmup-epochs 3 --decay-rate .97 \
+--opt rmsproptf --opt-eps .001 -j 10 --warmup-lr 1e-6 --weight-decay 1e-05 --drop 0.3 \
+--drop-path 0.0 --model-ema --model-ema-decay 0.9999 --aa rand-m9-mstd0.5 \
+--remode pixel --reprob 0.2 --lr 1e-02 --output $LOG_PATH \
+--experiment res_224/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_600/dp_0.0 --log-interval 200
 ```
 Tensorboard.dev Logs: [Links]() 
 
