@@ -50,7 +50,7 @@ Best architecture founded by WeakNAS
   <img src="assets/imagenet@mobilenet_compare.png" alt="drawing" width="540"/>
 </p>
 <p align="center">
-  <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="540"/>
+  <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="800"/>
 </p>
 
 Reproduce Best architecture @800 Queries
