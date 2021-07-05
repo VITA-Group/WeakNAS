@@ -49,7 +49,7 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 </p>
 Best architecture founded by WeakNAS
 <p align="center">
-  <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="800"/>
+  <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="750"/>
 </p>
 
 Reproduce Best architecture @800 Queries
