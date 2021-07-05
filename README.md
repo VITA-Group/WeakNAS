@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ### NASBenchs Search Space
 
 - [NAS-Bench-101](https://github.com/google-research/nasbench)  
-Download pre-processed NAS-Bench-101 from this [Link](https://drive.google.com/file/d/1v0tvvh3yi_S2oDTJMvqFgFimsH1rCz1H/view?usp=sharing), Replace $BENCH_PATH
+Download pre-processed NAS-Bench-101 from this [Link](https://drive.google.com/file/d/1v0tvvh3yi_S2oDTJMvqFgFimsH1rCz1H/view?usp=sharing), Replace $BENCH_PATH with the file path
 ```bash
 python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
 --bench_path $$BENCH_PATH \
@@ -29,7 +29,7 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 --mlp_size 1000 1000 1000 1000 --mlp_iter 200 --sample_decay none
 ```
 - [NAS-Bench-201](https://github.com/D-X-Y/NAS-Bench-201)  
-Download pre-processed NAS-Bench-201 from this [Link](), Replace $BENCH_PATH
+Download pre-processed NAS-Bench-201 from this [Link](), Replace $BENCH_PATH with the file path
 ```bash
 python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
 --bench_path $BENCH_PATH \
@@ -72,7 +72,7 @@ bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_1000 -b 128 \
 --remode pixel --reprob 0.2 --lr 1e-02 --output $LOG_PATH \
 --experiment res_224/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_600/dp_0.0 --log-interval 200
 ```
-Tensorboard.dev Logs: [Link](https://tensorboard.dev/experiment/YuDEyzRSQpOQT7ZEZa8tNg/#scalars)
+previous Tensorboard.dev Logs: [Link](https://tensorboard.dev/experiment/YuDEyzRSQpOQT7ZEZa8tNg/#scalars)
 
 ## Acknowledgement
 NASBench Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)  
