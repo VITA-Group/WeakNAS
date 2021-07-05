@@ -51,10 +51,10 @@ Best architecture founded by WeakNAS
 <p align="center">
   <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="800"/>
 </p>
+
 Reproduce Best architecture @800 Queries
 ```bash
 cd pytorch-image-models;
-# 800 Samples model
 bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_800 -b 128 \
 --sched cosine --img-size 236 --epochs 300 --warmup-epochs 3 --decay-rate .97 \
 --opt rmsproptf --opt-eps .001 -j 10 --warmup-lr 1e-6 --weight-decay 1e-05 --drop 0.3 \
@@ -65,7 +65,6 @@ bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_800 -b 128 \
 Reproduce Best architecture @1000 Queries
 ```bash
 cd pytorch-image-models;
-# 1000 Samples model
 bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_1000 -b 128 \
 --sched cosine --img-size 236 --epochs 600 --warmup-epochs 3 --decay-rate .97 \
 --opt rmsproptf --opt-eps .001 -j 10 --warmup-lr 1e-6 --weight-decay 1e-05 --drop 0.3 \
