@@ -1,11 +1,17 @@
 # Stronger NAS with Weaker Predictors
 Code used for [Stronger NAS with Weaker Predictors](https://arxiv.org/abs/2102.10490). 
 
-## Main Pipeline
-![An illustration of our Weak Predictors Pipeline](assets/process.png)
+## Overview
 
+Weak Predictors NAS Pipeline
+<p align="center">
+  <img src="assets/process.png" alt="drawing" width="900"/>
+</p>
 
-![Visualization of the Search Dynamics](assets/dynamics.png)
+Visualization of the Search Dynamics
+<p align="center">
+  <img src="assets/dynamics.png" alt="drawing" width="900"/>
+</p>
 
 ## Results
 
