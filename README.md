@@ -1,5 +1,5 @@
 # Stronger NAS with Weaker Predictors
-Code used for [Weak NAS Predictors Are All You Need](https://arxiv.org/abs/2102.10490). 
+Code used for [Stronger NAS with Weaker Predictors](https://arxiv.org/abs/2102.10490). 
 
 ## Main Pipeline
 ![An illustration of our Weak Predictors Pipeline](assets/process.png)
@@ -7,23 +7,35 @@ Code used for [Weak NAS Predictors Are All You Need](https://arxiv.org/abs/2102.
 
 ![Visualization of the Search Dynamics](assets/dynamics.png)
 
-## Performance Results
-
-
+## Results
 
 ### Environment
 ```bash
 pip install -r requirements.txt
 ```
 
-### Training
-Coming soon
+### NASBenchs Search Space
 
-### Testing
-Coming soon
+- NAS-Bench-101
+```bash
+# Download NAS-Bench-101
+```
+- NAS-Bench-201
+```bash
+# Download NAS-Bench-201
+```
+
+### Open Domain Search Space
+
+- ImageNet (MobileNet Setting)
+```bash
+# Download NAS-Bench-201
+```
+
 
 ## Acknowledgement
-Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)
+NASBench Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)  
+ImageNet Codebase from [timm](https://github.com/rwightman/pytorch-image-models)
 
 ## Citation
 if you find this repo is helpful, please cite
