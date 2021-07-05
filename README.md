@@ -16,13 +16,29 @@ pip install -r requirements.txt
 
 ### NASBenchs Search Space
 
-- NAS-Bench-101
+- NAS-Bench-101  
+Download pre-processed NAS-Bench-101 from this [Link]()
 ```bash
-# Download NAS-Bench-101
+python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
+--bench_path DATASET/nasbench101_minimal.pth.tar \
+--dataset cifar10 --setname valid --feature_list "Arch" \
+--bench nasbench101 --scratch_test_epoch 108 --top_decay 0.94 \
+--train_set valid --test_set test --rank_top 10 100 0 --top_start 100 \
+--top_end 100 --predictor MLP --save_top 5000 --repeat 1 --plot \
+--init_sample 100 --sample_each_iter 10 --max_sample 10000 \
+--mlp_size 1000 1000 1000 1000 --mlp_iter 200 --sample_decay none
 ```
 - NAS-Bench-201
+Download pre-processed NAS-Bench-201 from this [Link]()
 ```bash
-# Download NAS-Bench-201
+python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
+--bench_path DATASET/nasbench-201.pth.tar \
+--dataset cifar10-valid --setname valid --feature_list "Arch" \
+--bench nasbench101 --scratch_test_epoch 108 --top_decay 0.94 \
+--train_set x-valid --test_set ori-test --rank_top 10 100 0 --top_start 100 \
+--top_end 100 --predictor MLP --save_top 5000 --repeat 1 --plot \
+--init_sample 50 --sample_each_iter 10 --max_sample 15625 \
+--mlp_size 1000 1000 1000 1000 --mlp_iter 200 --sample_decay none
 ```
 
 ### Open Domain Search Space
@@ -48,7 +64,7 @@ bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_1000 -b 128 \
 --remode pixel --reprob 0.2 --lr 1e-02 --output $LOG_PATH \
 --experiment res_224/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_600/dp_0.0 --log-interval 200
 ```
-Tensorboard.dev Logs: [Links](https://tensorboard.dev/experiment/YuDEyzRSQpOQT7ZEZa8tNg/#scalars)
+Tensorboard.dev Logs: [Link](https://tensorboard.dev/experiment/YuDEyzRSQpOQT7ZEZa8tNg/#scalars)
 
 ## Acknowledgement
 NASBench Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)  
