@@ -28,7 +28,7 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 --init_sample 100 --sample_each_iter 10 --max_sample 10000 \
 --mlp_size 1000 1000 1000 1000 --mlp_iter 200 --sample_decay none
 ```
-- NAS-Bench-201
+- NAS-Bench-201  
 Download pre-processed NAS-Bench-201 from this [Link]()
 ```bash
 python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
