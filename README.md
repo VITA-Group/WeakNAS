@@ -17,10 +17,10 @@ pip install -r requirements.txt
 ### NASBenchs Search Space
 
 - [NAS-Bench-101](https://github.com/google-research/nasbench)  
-Download pre-processed NAS-Bench-101 from this [Link]()
+Download pre-processed NAS-Bench-101 from this [Link](https://drive.google.com/file/d/1v0tvvh3yi_S2oDTJMvqFgFimsH1rCz1H/view?usp=sharing), Replace $BENCH_PATH
 ```bash
 python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
---bench_path DATASET/nasbench101_minimal.pth.tar \
+--bench_path $$BENCH_PATH \
 --dataset cifar10 --setname valid --feature_list "Arch" \
 --bench nasbench101 --scratch_test_epoch 108 --top_decay 0.94 \
 --train_set valid --test_set test --rank_top 10 100 0 --top_start 100 \
@@ -29,10 +29,10 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 --mlp_size 1000 1000 1000 1000 --mlp_iter 200 --sample_decay none
 ```
 - [NAS-Bench-201](https://github.com/D-X-Y/NAS-Bench-201)  
-Download pre-processed NAS-Bench-201 from this [Link]()
+Download pre-processed NAS-Bench-201 from this [Link](), Replace $BENCH_PATH
 ```bash
 python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
---bench_path DATASET/nasbench-201.pth.tar \
+--bench_path $BENCH_PATH \
 --dataset cifar10-valid --setname valid --feature_list "Arch" \
 --bench nasbench101 --scratch_test_epoch 108 --top_decay 0.94 \
 --train_set x-valid --test_set ori-test --rank_top 10 100 0 --top_start 100 \
