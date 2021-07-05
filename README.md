@@ -38,8 +38,6 @@ bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_800 -b 128 \
 --remode pixel --reprob 0.2 --lr 1e-02 --output $LOG_PATH \
 --experiment res_224/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_300/dp_0.0 --log-interval 200
 ```
-Tensorboard.dev Logs: [Links]() 
-
 ```bash
 cd pytorch-image-models;
 # 1000 Samples model
@@ -50,7 +48,7 @@ bash distributed_train.sh $NUM_GPU $IMAGENET_PATH --model ofa_mbv3_1000 -b 128 \
 --remode pixel --reprob 0.2 --lr 1e-02 --output $LOG_PATH \
 --experiment res_224/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_600/dp_0.0 --log-interval 200
 ```
-Tensorboard.dev Logs: [Links]() 
+Tensorboard.dev Logs: [Links](https://tensorboard.dev/experiment/YuDEyzRSQpOQT7ZEZa8tNg/#scalars)
 
 ## Acknowledgement
 NASBench Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)  
