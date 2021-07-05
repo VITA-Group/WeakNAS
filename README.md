@@ -49,16 +49,9 @@ Best architecture founded by WeakNAS
 <p align="center">
   <img src="assets/imagenet@mobilenet_compare.png" alt="drawing" width="540"/>
 </p>
-
-[comment]: <> (<div style="text-align:center"><img src="assets/imagenet@mobilenet_compare.png" width="540"/></div>)
-
-[comment]: <> (<center>)
-
-[comment]: <> (  <img src="assets/imagenet@mobilenet_compare.png" alt="drawing" width="540">)
-
-[comment]: <> (  <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="800">)
-
-[comment]: <> (</center>)
+<p align="center">
+  <img src="assets/imagenet@mobilenet_best.png" alt="drawing" width="540"/>
+</p>
 
 Reproduce Best architecture @800 Queries
 ```bash
