@@ -18,7 +18,7 @@ import pandas as pd
 from functools import reduce
 from copy import deepcopy
 import argparse
-# import shap
+import shap
 from embedding import *
 from sklearn.svm import SVR
 from sklearn.pipeline import make_pipeline
