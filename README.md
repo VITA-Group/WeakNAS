@@ -25,7 +25,7 @@ pip install -r requirements.txt
 - [NAS-Bench-101](https://github.com/google-research/nasbench)  
 Download pre-processed NAS-Bench-101 from this [Link](https://drive.google.com/file/d/1v0tvvh3yi_S2oDTJMvqFgFimsH1rCz1H/view?usp=sharing), Replace $BENCH_PATH with the file path
 ```bash
-python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
+python AutoDL-Projects/exps/algos/WeakNAS.py --save_dir $LOG_PATH --rand_seed -1 \
 --bench_path $$BENCH_PATH \
 --dataset cifar10 --setname valid --feature_list "Arch" \
 --bench nasbench101 --scratch_test_epoch 108 --top_decay 0.94 \
@@ -37,7 +37,7 @@ python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1
 - [NAS-Bench-201](https://github.com/D-X-Y/NAS-Bench-201)  
 Download pre-processed NAS-Bench-201 from this [Link](https://drive.google.com/file/d/1VnxAblN9szeovAJE2pPCeD-hWQ1aXT-f/view?usp=sharing), Replace $BENCH_PATH with the file path
 ```bash
-python AutoDL-Projects/exps/algos/XGBOOST.py --save_dir $LOG_PATH --rand_seed -1 \
+python AutoDL-Projects/exps/algos/WeakNAS.py --save_dir $LOG_PATH --rand_seed -1 \
 --bench_path $BENCH_PATH \
 --dataset cifar10-valid --setname valid --feature_list "Arch" \
 --bench nasbench101 --scratch_test_epoch 108 --top_decay 0.94 \
