@@ -26,7 +26,7 @@ pip install -r requirements.txt
 Download pre-processed NAS-Bench-101 from this [Link](https://drive.google.com/file/d/1v0tvvh3yi_S2oDTJMvqFgFimsH1rCz1H/view?usp=sharing), Replace $BENCH_PATH with the file path
 ```bash
 python AutoDL-Projects/exps/algos/WeakNAS.py --save_dir $LOG_PATH --rand_seed -1 \
---bench_path $$BENCH_PATH \
+--bench_path $BENCH_PATH \
 --dataset cifar10 --setname valid --feature_list "Arch" \
 --bench nasbench101 --scratch_test_epoch 108 --top_decay 0.94 \
 --train_set valid --test_set test --rank_top 10 100 0 --top_start 100 \
@@ -40,8 +40,8 @@ Download pre-processed NAS-Bench-201 from this [Link](https://drive.google.com/f
 python AutoDL-Projects/exps/algos/WeakNAS.py --save_dir $LOG_PATH --rand_seed -1 \
 --bench_path $BENCH_PATH \
 --dataset cifar10-valid --setname valid --feature_list "Arch" \
---bench nasbench101 --scratch_test_epoch 108 --top_decay 0.94 \
---train_set x-valid --test_set ori-test --rank_top 10 100 0 --top_start 100 \
+--bench nasbench201 --scratch_test_epoch 200 --top_decay 0.94 \
+--train_set x-valid --test_set x-test --rank_top 10 100 0 --top_start 100 \
 --top_end 100 --predictor MLP --save_top 5000 --repeat 1 --plot \
 --init_sample 50 --sample_each_iter 10 --max_sample 15625 \
 --mlp_size 1000 1000 1000 1000 --mlp_iter 200 --sample_decay none
