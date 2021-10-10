@@ -1,5 +1,5 @@
 # Stronger NAS with Weaker Predictors
-Codes for [NeurIPS'21] [Stronger NAS with Weaker Predictors](https://arxiv.org/abs/2102.10490).
+[[NeurIPS'21] Stronger NAS with Weaker Predictors](https://arxiv.org/abs/2102.10490).
 
 Junru Wu, Xiyang Dai, Dongdong Chen, Yinpeng Chen, Mengchen Liu, Ye Yu, Zhangyang Wang, Zicheng Liu, Mei Chen and Lu Yuan
 
