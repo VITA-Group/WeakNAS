@@ -5,12 +5,12 @@ Junru Wu, Xiyang Dai, Dongdong Chen, Yinpeng Chen, Mengchen Liu, Ye Yu, Zhangyan
 
 ## Overview
 
-Weak Predictors NAS Pipeline
+Our WeakNAS Pipeline
 <p align="center">
   <img src="assets/process_raw.png" alt="drawing" width="900"/>
 </p>
 
-Search Dynamic Visualization in t-SNE
+Search Dynamic Visualization of WeakNAS in t-SNE
 <p align="center">
   <img src="assets/tsne.png" alt="drawing" width="900"/>
 </p>
