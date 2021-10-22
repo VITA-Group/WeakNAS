@@ -14,7 +14,8 @@ Search Dynamic Visualization in t-SNE
 <p align="center">
   <img src="assets/tsne.png" alt="drawing" width="900"/>
 </p>
-Reproduce this figure:
+Reproduce the aboved figure:
+
 ```bash
 visualize_search_dynamic.ipynb.ipynb
 ```
