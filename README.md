@@ -14,6 +14,10 @@ Search Dynamic Visualization in t-SNE
 <p align="center">
   <img src="assets/tsne.png" alt="drawing" width="900"/>
 </p>
+Reproduce this figure:
+```bash
+visualize_search_dynamic.ipynb.ipynb
+```
 
 ## Implementation
 
@@ -195,13 +199,6 @@ Best architecture founded by WeakNAS
     ```
   Previous Tensorboard.dev Logs: [Link](https://tensorboard.dev/experiment/YuDEyzRSQpOQT7ZEZa8tNg/#scalars)
 
-## Open Domain Search Space
-  
-### Search Dynamic Visualization in t-SNE
-
-- ```bash
-  visualize_search_dynamic.ipynb.ipynb
-  ```
 
 ## Acknowledgement
 NASBench Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)  
