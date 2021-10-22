@@ -7,7 +7,7 @@ Junru Wu, Xiyang Dai, Dongdong Chen, Yinpeng Chen, Mengchen Liu, Ye Yu, Zhangyan
 
 Weak Predictors NAS Pipeline
 <p align="center">
-  <img src="assets/process.png" alt="drawing" width="900"/>
+  <img src="assets/process_raw.png" alt="drawing" width="900"/>
 </p>
 
 Search Dynamic Visualization in t-SNE
