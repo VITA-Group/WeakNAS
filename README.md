@@ -17,7 +17,7 @@ Visualization of the Search Dynamics
 
 ## Implementation
 
-- [ ] NAS-Bench Search Space
+- [x] NAS-Bench Search Space
   - [x] NAS-Bench-201 Search Space
   - [x] NAS-Bench-101 Search Space
 - [ ] Open Domain Search Space
