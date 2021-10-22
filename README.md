@@ -15,7 +15,16 @@ Visualization of the Search Dynamics
   <img src="assets/dynamics.png" alt="drawing" width="900"/>
 </p>
 
-## Results
+## Implementation
+
+- [ ] NAS-Bench Search Space
+  - [x] NAS-Bench-201 Search Space
+  - [x] NAS-Bench-101 Search Space
+- [ ] Open Domain Search Space
+  - [ ] NASNet Search Space (ImageNet)
+  - [x] MobileNet Search Space ImageNet (ImageNet)
+- [x] Interpretation
+  - [x] Search Dynamic Visualization in t-SNE
 
 ### Environment
 ```bash
@@ -185,6 +194,14 @@ Best architecture founded by WeakNAS
     --experiment res_236/bs_128/cosine/lr_5e-03/wd_1e-05/epoch_600/dp_0.0 --log-interval 200
     ```
   Previous Tensorboard.dev Logs: [Link](https://tensorboard.dev/experiment/YuDEyzRSQpOQT7ZEZa8tNg/#scalars)
+
+## Open Domain Search Space
+  
+### Search Dynamic Visualization in t-SNE
+
+- ```bash
+  visualize_search_dynamic.ipynb.ipynb
+  ```
 
 ## Acknowledgement
 NASBench Codebase from [AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)  
