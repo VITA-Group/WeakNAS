@@ -18,13 +18,13 @@ Search Dynamic Visualization in t-SNE
 ## Implementation
 
 - [x] NAS-Bench Search Space
-  - [x] NAS-Bench-201 Search Space
-  - [x] NAS-Bench-101 Search Space
+  - [x] NAS-Bench-101 Search Space (CIFAR10)
+  - [x] NAS-Bench-201 Search Space (CIFAR10, CIFAR100, ImageNet16-120)
 - [ ] Open Domain Search Space
   - [ ] NASNet Search Space (ImageNet)
-  - [x] MobileNet Search Space ImageNet (ImageNet)
+  - [x] MobileNet Search Space (ImageNet)
 - [x] Interpretation
-  - [x] Search Dynamic Visualization in t-SNE
+  - [x] Search Dynamic Visualization in t-SNE (NAS-Bench-201)
 
 ### Environment
 ```bash
