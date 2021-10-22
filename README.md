@@ -10,9 +10,9 @@ Weak Predictors NAS Pipeline
   <img src="assets/process.png" alt="drawing" width="900"/>
 </p>
 
-Visualization of the Search Dynamics
+Search Dynamic Visualization in t-SNE
 <p align="center">
-  <img src="assets/dynamics.png" alt="drawing" width="900"/>
+  <img src="assets/tsne.png" alt="drawing" width="900"/>
 </p>
 
 ## Implementation
