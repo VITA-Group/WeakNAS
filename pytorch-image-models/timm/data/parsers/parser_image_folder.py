@@ -55,7 +55,8 @@ class ParserImageFolder(Parser):
                 'meta file %s under root %s not found' % (os.path.basename(meta_file), root)
             with open(meta_file, 'r') as f:
                 meta = json.load(f)
-            self.root_truncated = os.path.join(*root.split(os.path.sep)[:-1])
+            # self.root_truncated = os.path.join(*root.split(os.path.sep)[:-1])
+            self.root_truncated = os.path.dirname(root)
             self.samples = [tuple([os.path.join(self.root_truncated, sample[0]), sample[1]]) for sample in meta['samples']]
             if class_map:
                 self.class_to_idx = meta['class_to_idx']

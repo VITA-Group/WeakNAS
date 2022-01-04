@@ -46,7 +46,7 @@ Replace --save_dir with your own log path, repeat at least 100 times for stable 
 
   - ### run WeakNAS
   - ```bash
-    python WeakNAS.py --rand_seed -1 --repeat 100 \
+    python WeakNAS.py --rand_seed -1 --repeat 100 --train_set valid --test_set test \
     --save_dir OUTPUT/nasbench101/init_100_sample_10/top_start_100_end_100/MLP/onehot_size_1000_1000_1000_1000_iter_100/acq_uniform/deter_False \
     --bench_path $BENCH_PATH --bench nasbench101 --dataset cifar10 --deterministic False \
     --top_start 100 --top_end 100 --init_sample 100 --sample_each_iter 10 --sampling_method uniform \
@@ -54,7 +54,7 @@ Replace --save_dir with your own log path, repeat at least 100 times for stable 
     ```
   - ### run WeakNAS + EI Variant
   - ```bash
-    python WeakNAS.py --rand_seed -1 --repeat 100 \
+    python WeakNAS.py --rand_seed -1 --repeat 100 --train_set valid --test_set test \
     --save_dir OUTPUT/nasbench101/init_100_sample_10/top_start_100_end_100/MLP/onehot_size_1000_1000_1000_1000_iter_100/acq_ei/deter_False \
     --bench_path $BENCH_PATH --bench nasbench101 --dataset cifar10 --deterministic False \
     --top_start 100 --top_end 100 --init_sample 100 --sample_each_iter 10 --sampling_method ei \
@@ -76,17 +76,17 @@ Replace --save_dir with your own log path, repeat at least 100 times for stable 
 
   - ### run WeakNAS
   - ```bash
-    python WeakNAS.py --rand_seed -1 --repeat 100 \
+    python WeakNAS.py --rand_seed -1 --repeat 100 --train_set x-valid --test_set ori-test \
     --save_dir OUTPUT/nasbench201/cifar10/init_10_sample_10/top_start_100_end_100/MLP/onehot_size_1000_1000_1000_1000_iter_100/acq_uniform/deter_False \
-    --bench_path $BENCH_PATH --bench nasbench201 --dataset cifar10 --deterministic False \
+    --bench_path $BENCH_PATH --bench nasbench201 --dataset cifar10-valid --deterministic False \
     --top_start 100 --top_end 100 --init_sample 10 --sample_each_iter 10 --sampling_method uniform \
     --predictor MLP --max_sample 1000 --mlp_size 1000 1000 1000 1000 --mlp_iter 100
     ```
   - ### run WeakNAS + EI Variant
   - ```bash
-    python WeakNAS.py --rand_seed -1 --repeat 100 \
+    python WeakNAS.py --rand_seed -1 --repeat 100 --train_set x-valid --test_set ori-test \
     --save_dir OUTPUT/nasbench201/cifar10/init_10_sample_10/top_start_100_end_100/MLP/onehot_size_1000_1000_1000_1000_iter_100/acq_ei/deter_False \
-    --bench_path $BENCH_PATH --bench nasbench201 --dataset cifar10 --deterministic False \
+    --bench_path $BENCH_PATH --bench nasbench201 --dataset cifar10-valid --deterministic False \
     --top_start 100 --top_end 100 --init_sample 10 --sample_each_iter 10 --sampling_method ei \
     --predictor MLP --max_sample 1000 --mlp_size 1000 1000 1000 1000 --mlp_iter 100
     ```
@@ -101,7 +101,7 @@ Replace --save_dir with your own log path, repeat at least 100 times for stable 
   
   - ### run WeakNAS
   - ```bash
-    python WeakNAS.py --rand_seed -1 --repeat 100 \
+    python WeakNAS.py --rand_seed -1 --repeat 100 --train_set x-valid --test_set x-test \
     --save_dir OUTPUT/nasbench201/cifar100/init_10_sample_10/top_start_100_end_100/MLP/onehot_size_1000_1000_1000_1000_iter_100/acq_uniform/deter_False \
     --bench_path $BENCH_PATH --bench nasbench201 --dataset cifar100 --deterministic False \
     --top_start 100 --top_end 100 --init_sample 10 --sample_each_iter 10 --sampling_method uniform \
@@ -109,7 +109,7 @@ Replace --save_dir with your own log path, repeat at least 100 times for stable 
     ```
   - ### run WeakNAS + EI Variant
   - ```bash
-    python WeakNAS.py --rand_seed -1 --repeat 100 \
+    python WeakNAS.py --rand_seed -1 --repeat 100 --train_set x-valid --test_set x-test \
     --save_dir OUTPUT/nasbench201/cifar100/init_10_sample_10/top_start_100_end_100/MLP/onehot_size_1000_1000_1000_1000_iter_100/acq_ei/deter_False \
     --bench_path $BENCH_PATH --bench nasbench201 --dataset cifar100 --deterministic False \
     --top_start 100 --top_end 100 --init_sample 10 --sample_each_iter 10 --sampling_method ei \
@@ -126,7 +126,7 @@ Replace --save_dir with your own log path, repeat at least 100 times for stable 
 
    - ### run WeakNAS
    - ```bash
-     python WeakNAS.py --rand_seed -1 --repeat 100 \
+     python WeakNAS.py --rand_seed -1 --repeat 100 --train_set x-valid --test_set x-test \
      --save_dir OUTPUT/nasbench201/ImageNet16-120/init_10_sample_10/top_start_100_end_100/MLP/onehot_size_1000_1000_1000_1000_iter_100/acq_uniform/deter_False \
      --bench_path $BENCH_PATH --bench nasbench201 --dataset ImageNet16-120 --deterministic False \
      --top_start 100 --top_end 100 --init_sample 10 --sample_each_iter 10 --sampling_method uniform \
@@ -134,7 +134,7 @@ Replace --save_dir with your own log path, repeat at least 100 times for stable 
      ```
    - ### run WeakNAS + EI Variant
    - ```bash
-     python WeakNAS.py --rand_seed -1 --repeat 100 \
+     python WeakNAS.py --rand_seed -1 --repeat 100 --train_set x-valid --test_set x-test \
      --save_dir OUTPUT/nasbench201/ImageNet16-120/init_10_sample_10/top_start_100_end_100/MLP/onehot_size_1000_1000_1000_1000_iter_100/acq_ei/deter_False \
      --bench_path $BENCH_PATH --bench nasbench201 --dataset ImageNet16-120 --deterministic False \
      --top_start 100 --top_end 100 --init_sample 10 --sample_each_iter 10 --sampling_method ei \

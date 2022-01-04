@@ -11,3 +11,4 @@ from .model import unwrap_model, get_state_dict
 from .model_ema import ModelEma, ModelEmaV2
 from .random import random_seed
 from .summary import update_summary, update_tensorboard, get_outdir
+from .model_info import get_model_infos

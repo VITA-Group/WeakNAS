@@ -23,6 +23,9 @@ from collections import OrderedDict
 from contextlib import suppress
 from datetime import datetime
 from tqdm import tqdm
+# from timm.utils
+# from thop import profile
+# from thop import clever_format
 
 import torch
 import torch.nn as nn
@@ -396,10 +399,15 @@ def main():
 
     if args.local_rank == 0:
         _logger.info(
-            f'Model {safe_model_name(args.model)} created, param count:{sum([m.numel() for m in model.parameters()])}')
+            f'Model {safe_model_name(args.model)} created, param count:{sum([m.numel() for m in model.parameters()])/10**6}M')
+        # input = torch.randn(1, 3, args.img_size, args.img_size)
+        # macs, params = profile(model, inputs=(input,))
+        # macs, params = clever_format([macs, params], "%.3f")
+        flops, params = get_model_infos(model, shape=(1, 3, args.img_size, args.img_size))
+        _logger.info(f'Param: {params}M, FLOPs: {flops}')
         if args.teacher is not None:
             _logger.info(
-                f'Teacher {safe_model_name(args.teacher)} created, param count:{sum([m.numel() for m in model.parameters()])}')
+                f'Teacher {safe_model_name(args.teacher)} created, param count:{sum([m.numel() for m in model.parameters()])/10**6}M')
 
     data_config = resolve_data_config(vars(args), model=model, verbose=args.local_rank == 0)
     # if args.teacher is not None:
