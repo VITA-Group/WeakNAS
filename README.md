@@ -17,7 +17,7 @@ Search Dynamic Visualization of WeakNAS in t-SNE
 Reproduce the aboved figure:
 
 ```bash
-visualize_search_dynamic.ipynb.ipynb
+visualize_search_dynamic.ipynb
 ```
 
 ## Implementation
